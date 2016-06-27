@@ -12,6 +12,8 @@ library(doParallel)
 set.seed(2000)
 options(warn=-1)
 ```
+# Introduction
+This project is a classification problem. We start with 160 prediction columns. All of the useful predictors are numbers and the outcome is a factor with 5 levels.
 
 First, I loaded the data - training and test data provided by COURSERA. Some values contained a "#DIV/0!" that I replaced with an NA value.</br>
 
@@ -49,6 +51,8 @@ rf <- foreach(ntree=rep(150, 6), .combine=randomForest::combine, .packages='rand
 ```
 
 Provide error reports for both training and test data.
+
+Cross-validation is done using the confusionMatrix
 ```
 predictions1 <- predict(rf, newdata=training)
 confusionMatrix(predictions1,training$classe)
