@@ -1,10 +1,10 @@
 ---
-title: "PML"
-output: html_document
+## Practical Machine Learning
+# R Code
 ---
 
-library(Hmisc)
-library(caret)
+library(Hmisc)\
+library(caret)\
 library(randomForest)
 library(foreach)
 library(doParallel)
