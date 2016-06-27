@@ -54,7 +54,7 @@ rf <- foreach(ntree=rep(150, 6), .combine=randomForest::combine, .packages='rand
 
 Provide error reports for both training and test data.
 
-Cross-validation is done using the confusionMatrix
+Cross-validation is done using the confusionMatrix for both the In sample error and the Out of sample error
 ```
 predictions1 <- predict(rf, newdata=training)
 confusionMatrix(predictions1,training$classe)
