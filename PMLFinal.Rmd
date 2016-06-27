@@ -4,13 +4,13 @@
 ---
 
 
-library(Hmisc)</br>
+'''library(Hmisc)</br>
 library(caret)
 library(randomForest)
 library(foreach)
 library(doParallel)
 set.seed(2048)
-options(warn=-1)
+options(warn=-1)'''
 
 training_data <- read.csv("pml-training.csv", na.strings=c("#DIV/0!") )
 evaluation_data <- read.csv("pml-testing.csv", na.strings=c("#DIV/0!") )
