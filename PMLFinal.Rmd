@@ -2,6 +2,10 @@
 ## Practical Machine Learning
 ## R Code
 ---
+
+# Introduction
+This project is a classification problem. We start with 160 prediction columns. All of the useful predictors are numbers and the outcome is a factor with 5 levels.
+
 For this assignment, I analyzed the provided data to predict the manner in which the exercise was done. To do this, the caret and randomForest packages were used, this allowed me to generate correct answers for each of the 20 test data cases provided in this assignment. I made use of a seed value for consistent results. </br>
 
 ```library(Hmisc)
@@ -12,8 +16,6 @@ library(doParallel)
 set.seed(2000)
 options(warn=-1)
 ```
-# Introduction
-This project is a classification problem. We start with 160 prediction columns. All of the useful predictors are numbers and the outcome is a factor with 5 levels.
 
 First, I loaded the data - training and test data provided by COURSERA. Some values contained a "#DIV/0!" that I replaced with an NA value.</br>
 
