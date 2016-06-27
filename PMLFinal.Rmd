@@ -1,8 +1,6 @@
 ---
-## Practical Machine Learning
+# Practical Machine Learning
 ## R Code
----
-
 # Introduction
 This project is a classification problem. We start with 160 prediction columns. All of the useful predictors are numbers and the outcome is a factor with 5 levels.
 
