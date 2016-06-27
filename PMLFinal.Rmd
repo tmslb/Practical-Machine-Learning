@@ -1,10 +1,10 @@
 ---
 ## Practical Machine Learning
-# R Code
+## R Code
 ---
 
-library(Hmisc)\
-library(caret)\
+library(Hmisc)
+library(caret)
 library(randomForest)
 library(foreach)
 library(doParallel)
